@@ -1,0 +1,3 @@
+Insert into (nombre, precio, create_at) values('Panasonic', 800, now)
+Insert into (nombre, precio, create_at) values('Xiaomi', 1200, now)
+Insert into (nombre, precio, create_at) values('Lg', 500, now)

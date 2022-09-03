@@ -1,0 +1,5 @@
+package com.curso.items.models.service;
+
+public class ItemService {
+
+}

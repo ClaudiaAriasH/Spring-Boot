@@ -1,0 +1,8 @@
+package com.curso.items.config.feign;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "products-api")
+public interface ProductoClienteRest {
+
+}

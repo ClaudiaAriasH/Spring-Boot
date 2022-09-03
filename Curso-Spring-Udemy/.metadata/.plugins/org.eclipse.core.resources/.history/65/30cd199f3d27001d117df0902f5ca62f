@@ -1,0 +1,5 @@
+package com.curso.items.controllers;
+
+public class ItemController {
+
+}

@@ -1,0 +1,25 @@
+package com.curso.products.models.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.curso.products.models.entity.Producto;
+import com.curso.products.models.service.IProductoService;
+
+@Service
+public class ProductoServiceImpl implements IProductoService{
+
+	@Override
+	public List<Producto> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Producto findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

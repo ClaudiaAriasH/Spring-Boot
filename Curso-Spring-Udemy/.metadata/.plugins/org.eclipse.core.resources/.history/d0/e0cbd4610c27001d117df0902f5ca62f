@@ -1,0 +1,5 @@
+package com.curso.products.models.repository;
+
+public interface ProductoRepository {
+
+}

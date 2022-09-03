@@ -1,0 +1,5 @@
+package com.curso.products.models.entity;
+
+public class Producto {
+
+}

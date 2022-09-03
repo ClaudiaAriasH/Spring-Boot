@@ -1,0 +1,25 @@
+package com.curso.items.models.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.curso.items.models.Item;
+import com.curso.items.models.service.ItemService;
+
+@Service
+public class ItemServiceFeignImpl  implements ItemService{
+
+	@Override
+	public List<Item> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item findById(Long id, Integer cantidad) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

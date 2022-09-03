@@ -1,0 +1,5 @@
+package com.curso.items.models.service.impl;
+
+public class ItemServiceFeignImpl {
+
+}

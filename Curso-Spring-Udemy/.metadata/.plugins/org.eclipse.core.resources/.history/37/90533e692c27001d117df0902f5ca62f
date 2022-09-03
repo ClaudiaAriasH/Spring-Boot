@@ -1,0 +1,5 @@
+package com.curso.products.controllers;
+
+public class ProductoController {
+
+}

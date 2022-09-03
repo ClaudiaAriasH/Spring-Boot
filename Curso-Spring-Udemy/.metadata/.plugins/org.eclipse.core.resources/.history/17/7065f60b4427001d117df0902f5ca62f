@@ -1,0 +1,19 @@
+package com.curso.items.config.feign;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.curso.items.models.Producto;
+
+
+@FeignClient(name = "products-api", url = "localhost:8001/productos")
+public interface ProductoClienteRest {
+	
+	@GetMapping("/listar")
+	public List<Producto> listar();
+	
+	@GetMapping("/{id}")
+	public Producto detalle(Long id);
+}

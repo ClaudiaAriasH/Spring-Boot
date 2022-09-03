@@ -1,0 +1,30 @@
+package com.curso.products.models.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.curso.products.models.entity.Producto;
+import com.curso.products.models.repository.ProductoRepository;
+import com.curso.products.models.service.IProductoService;
+
+@Service
+public class ProductoServiceImpl implements IProductoService{
+	
+	private ProductoRepository productoRepository;
+
+	@Override
+	@Transactional(readOnly = true)
+	public List<Producto> findAll() {
+		return (List<Producto>)productoRepository.findAll();
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Producto findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

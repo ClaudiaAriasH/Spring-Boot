@@ -1,0 +1,5 @@
+package com.curso.items.config;
+
+public class AppConfig {
+
+}

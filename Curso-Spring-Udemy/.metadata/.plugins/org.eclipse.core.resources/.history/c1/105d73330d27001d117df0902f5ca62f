@@ -1,0 +1,5 @@
+package com.curso.products.models.service.impl;
+
+public class ProductoServiceImpl {
+
+}
