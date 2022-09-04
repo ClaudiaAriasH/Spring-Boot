@@ -13,7 +13,6 @@
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.buildship.core.classpathprovider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.curso.products.ProductsApiApplication"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="products-api"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dserver.port=9001"/>
     <stringAttribute key="process_factory_id" value="org.springframework.ide.eclipse.boot.launch.process.BootProcessFactory"/>
     <booleanAttribute key="spring.boot.ansi.console" value="true"/>
     <stringAttribute key="spring.boot.app.properties" value=""/>
