@@ -1334,3 +1334,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-09-04 11:05:54,820 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-09-04 11:05:54,828 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-09-04 11:05:54,828 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 11:05:54,828 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\19H1\Documents\Spring-Boot\Curso-Spring-Udemy\eureka-server\src\test\resources
