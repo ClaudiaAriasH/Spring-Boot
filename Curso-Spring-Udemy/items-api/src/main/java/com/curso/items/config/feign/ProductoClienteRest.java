@@ -13,9 +13,9 @@ import com.curso.items.models.Producto;
 @FeignClient(name = "products-api")
 public interface ProductoClienteRest {
 	
-	@GetMapping("/productos/listar")
+	@GetMapping("/listar")
 	public List<Producto> listar();
 	
-	@GetMapping("/productos/{id}")
+	@GetMapping("/{id}")
 	public Producto detalle(@PathVariable(value="id") Long id);
 }
