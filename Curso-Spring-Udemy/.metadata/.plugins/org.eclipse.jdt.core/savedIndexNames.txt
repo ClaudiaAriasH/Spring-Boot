@@ -88,7 +88,6 @@ INDEX VERSION 1.131+C:\Users\19H1\Documents\Spring-Boot\Curso-Spring-Udemy\.meta
 1659914748.index
 3410467560.index
 2687771993.index
-1326466849.index
 2638006922.index
 3528801811.index
 4199621866.index

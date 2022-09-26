@@ -11120,3 +11120,29 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-25 19:02:42.647
 !MESSAGE Boot LS startup time from start to initialized: 3444ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-25 19:52:40.298
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-25 19:52:40.323
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@34272839[org.springframework.tooling.boot.ls:1.38.0.202208110704(id=567)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-25 19:52:40.324
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-25 19:52:45.132
+!MESSAGE Boot LS startup time from start to initialized: 4790ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-25 19:52:47.483
+!MESSAGE executing callback sts4.classpath.YssfKQgG FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-09-25 19:52:47.486
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:177)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

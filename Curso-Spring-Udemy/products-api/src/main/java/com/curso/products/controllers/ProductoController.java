@@ -37,14 +37,14 @@ public class ProductoController {
 	public Producto detalle(@PathVariable Long id){
 		Producto producto = productoServiceImpl.findById(id);
 		producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
-	    /*	
+	    
 		try {
 			Thread.sleep(2000L);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		*/
+		
 		return producto;
 	}
 }
