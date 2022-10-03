@@ -21,30 +21,29 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RestController
 @CrossOrigin("*")
 public class ItemController {
-	
+
 	private final Logger logger = LoggerFactory.getLogger(ItemController.class);
-	
-	
+
 	@Autowired
 	@Qualifier("itemServiceFeign")
-	//@Qualifier("serviceRestTemplate")
+	// @Qualifier("serviceRestTemplate")
 	private ItemService itemService;
-	
+
 	@GetMapping("/listar")
-	public List<Item> listar(@RequestParam(name="nombre") String nombre, @RequestHeader(name="token-request") String token) {
+	public List<Item> listar(@RequestParam(name = "nombre", required = false) String nombre,
+			@RequestHeader(name = "token-request", required = false) String token) {
 		logger.info("RequestParameter: " + nombre);
 		logger.info("RequestHeader: " + token);
-		return itemService.findAll();		
+		return itemService.findAll();
 	}
 
-	@HystrixCommand(fallbackMethod="metodoAlternativo")
+	@HystrixCommand(fallbackMethod = "metosdoAlternativo")
 	@GetMapping("/{id}/cantidad/{cantidad}")
 	public Item detalle(@PathVariable Long id, @PathVariable Integer cantidad) {
-		return itemService.findById(id, cantidad);		
+		return itemService.findById(id, cantidad);
 	}
 
-	
-	public Item metodoAlternativo( Long id, Integer cantidad) {
+	public Item metodoAlternativo(Long id, Integer cantidad) {
 		Item item = new Item();
 		Producto producto = new Producto();
 		item.setCantidad(cantidad);
@@ -52,6 +51,6 @@ public class ItemController {
 		producto.setNombre("Camara sony");
 		producto.setPrecio(500.00);
 		item.setProducto(producto);
-		return item;		
+		return item;
 	}
 }
