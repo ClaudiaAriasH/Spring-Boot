@@ -35,7 +35,8 @@ public class ExampleGlobalFilter  implements GlobalFilter, Ordered{
 
 	@Override
 	public int getOrder() {
-		return -1;
+		// -1 no deja modificar, solo es de lectura
+		return 1;
 	}
 
 }
